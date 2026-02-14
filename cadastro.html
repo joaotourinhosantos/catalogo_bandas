@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Banda</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Voltar ao Catálogo</a>
+  </nav>
+</header>
+
+<section>
+  <h1>Cadastro de Banda</h1>
+
+  <form id="bandForm">
+  <input type="hidden" id="bandId">
+
+  <input type="text" id="name" placeholder="Nome da banda" required>
+  <input type="text" id="genre" placeholder="Gênero musical" required>
+  <input type="text" id="city" placeholder="Cidade">
+  <input type="text" id="contact" placeholder="Contato">
+
+  <textarea id="description" placeholder="Descrição"></textarea>
+
+  <input type="file" id="image" accept="image/*">
+
+  <button type="submit">Salvar Banda</button>
+</form>
+<section>
+  <h2>Bandas Cadastradas</h2>
+
+  <div id="bandList" class="card-container"></div>
+</section>
+
+
+</section>
+
+<script type="module" src="src/cadastro.js"></script>
+</body>
+</html>
